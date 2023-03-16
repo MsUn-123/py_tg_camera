@@ -1,9 +1,10 @@
-import telebot, time, cv2
+import telebot, time, cv2cam
 import settings, markups
 
 bot = telebot.TeleBot(settings.key)
 host = settings.host
 bootTime = time.time()
+camera = cv2cam.CV2Camera()
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
@@ -14,7 +15,7 @@ def handle_message(message):
 	if message.from_user.id == host:
 		match message.text:
 			case "Take frame":
-				frameCap()
+				camera.get_frame()
 				bot.send_photo(message.from_user.id, open("frame.png", "rb"), caption = "Here is your photo!", reply_to_message_id = message)
 			case "Ping":
 				reply = f"Pong!\nCur. uptime: {int(time.time() - bootTime)} secs...\nAnd counting!"
@@ -22,12 +23,6 @@ def handle_message(message):
 			case "Test menu":
 				bot.reply_to(message, "Under construction! ~Te-he!~", reply_markup = markups.showMenu())
 
-def frameCap(): #there is cv2 function inside telegram bot because i have little knowledge in programming. Nice!
-    cam = cv2.VideoCapture(0)
-    ret, frame = cam.read()
-    if not ret:
-        return
-    cv2.imwrite("frame.png", frame)
-    cam.release()
-
 bot.infinity_polling()
+
+#stop using remote desktop Donk 
