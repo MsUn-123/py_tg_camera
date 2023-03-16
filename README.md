@@ -9,13 +9,26 @@
 
 ## About <a name = "about"></a>
 
-Little telegram bot written using telebot library for communicating and cv2 lib as image grabber. Made this thing because im to scared to leave my house alone :)
+Little telegram bot written using telebot library for communicating and cv2 lib as image grabber. Made this thing because im too scared to leave my house alone :)
 
-## Getting Started <a name = "getting_started"></a>
+### Screenshots
+
+![Def not rickroll](https://i.ibb.co/dgmT1CN/Screenshot-20230316-234847.png)
+
+
+## Getting Started<a name = "getting_started"></a>
 
 *something about git clone*
+```
+git clone https://github.com/MsUn-123/tg_camera
+cd tg_camera
+```
 
-*something about requirements...*
+*something about virtual environment and requirements...*
+```
+virtualenv .venv
+pip install -r requerments.txt
+```
 
 ## Usage <a name = "usage"></a>
 
