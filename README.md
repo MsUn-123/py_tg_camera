@@ -9,7 +9,7 @@
 
 ## About <a name = "about"></a>
 
-Little telegram bot written using telebot library for communicating and cv2 lib as image grabber. Made this thing because im too scared to leave my house alone :) This only answers to users whose ID you set in settings.py. 
+Little telegram bot written using telebot library for communicating and cv2 lib as image grabber. Made this thing because im too scared to leave my house alone :) Bot only answers to users whose ID you set in settings.py. 
 
 ### Screenshots
 
