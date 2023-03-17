@@ -8,7 +8,7 @@ def showMenu():
     markup.add(btn1, btn2, btn3)
     return markup
 
-def testMenu() -> types:
+def testMenu():
     markup = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard = True)
     btn1 = types.KeyboardButton('Take me back!')
     markup.add(btn1)

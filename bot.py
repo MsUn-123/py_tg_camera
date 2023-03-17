@@ -1,7 +1,7 @@
-import telebot, time
+import telebot
 import settings, markups, cv2cam, utils
 
-bootTime = time.time()
+utility = utils.Utils()
 bot = telebot.TeleBot(settings.key)
 camera = cv2cam.CV2Camera()
 owner = settings.owner
@@ -18,7 +18,7 @@ def handle_message(message):
 				camera.get_frame()
 				bot.send_photo(message.from_user.id, open("frame.png", "rb"), caption = "Here is your photo!", reply_to_message_id = message)
 			case "Ping":
-				reply = f"Pong!\nCur. uptime: {utils.get_uptime(bootTime)}"
+				reply = f"Pong!\nCur. uptime: {utility.get_uptime()}"
 				bot.reply_to(message, reply, reply_markup = markups.showMenu())
 			case "Test menu":
 				bot.reply_to(message, "Under construction! ~Te-he!~", reply_markup = markups.showMenu())
