@@ -1,4 +1,4 @@
-# PyTelegram home camera
+# PyTelegram home camera (py3.10)
 
 ## Table of Contents
 
@@ -9,7 +9,7 @@
 
 ## About <a name = "about"></a>
 
-Little telegram bot written using telebot library for communicating and cv2 lib as image grabber. Made this thing because im too scared to leave my house alone :) Bot only answers to user whose ID you set in settings.py. This project uses py3.10!!! 
+Little telegram bot written using telebot library for communicating and cv2 lib as image grabber. Made this thing because im too scared to leave my house alone :) Bot only answers to user whose ID you set in settings.py.
 
 ### Screenshots
 
