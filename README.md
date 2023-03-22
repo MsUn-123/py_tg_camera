@@ -49,7 +49,7 @@ From there use `/start` command and use menu buttons!
 
 Feel free to contribute! Any help is apreciated and it will help me to learn new things!
 
-###TO-DO
+### TO-DO
 
 [ ] - Camera warm-up (See if it would be enough on first start or  should you do it everytime)
   [ ] - Move bot to async so it can perfom other tasks while warming up camera (if warming up at start is not enough)
